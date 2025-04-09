@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Portfolio | Ryan Kalansi</title>
-
     <link
       rel="shortcut icon"
       href="assets/image/RK-favicon.png"
@@ -16,6 +14,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Portfolio | Ryan Kalansi</title>
   </head>
 
   <body>
@@ -32,7 +32,7 @@
     </header>
 
     <main>
-      <div class="hero-section" id="home">
+      <div class="hero-section" id="home" data-aos="fade-up">
         <aside>
           <img src="assets/image/RK1.JPG" alt="foto-ryan" />
           <p>IS Student | Universitas Gunadarma</p>
@@ -40,7 +40,7 @@
       </div>
 
       <article>
-        <section class="about" id="about">
+        <section class="about" id="about" data-aos="fade-up">
           <div class="container">
             <h1 class="section-title">About</h1>
             <div class="about-content">
@@ -93,7 +93,7 @@
         </section>
 
         <section class="experiences" id="experiences">
-          <div class="container">
+          <div class="container" data-aos="fade-up">
             <h1 class="section-title">Experience</h1>
             <div class="timeline">
               <div class="timeline-item">
@@ -173,7 +173,7 @@
         </section>
 
         <section class="projects" id="project">
-          <div class="container">
+          <div class="container" data-aos="fade-up">
             <h1 class="section-title">Projects</h1>
             <div class="projects-gallery">
               <!-- Projects 1 -->
@@ -275,7 +275,7 @@
 
     <!-- FOOTER -->
     <footer id="contact">
-      <div class="footer-container">
+      <div class="footer-container" data-aos="fade-up">
         <h1 class="section-title">Contact</h1>
         <div class="contact-wrapper">
           <div class="contact-item">
@@ -306,5 +306,10 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
